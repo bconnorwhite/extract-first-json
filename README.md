@@ -16,7 +16,7 @@
 
 <br />
 
-> Extract first JSON object from a string.
+> Extract the first JSON object or array from a string.
 
 ## Installation
 

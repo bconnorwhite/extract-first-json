@@ -1,0 +1,49 @@
+{
+  "name": "extract-first-json",
+  "version": "1.0.0",
+  "description": "Extract first JSON object from a string",
+  "license": "MIT",
+  "author": {
+    "name": "Connor White",
+    "email": "connor.bcw@gmail.com",
+    "url": "https://connorwhite.org"
+  },
+  "homepage": "https://connorwhite.org/github/extract-first-json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/extract-first-json.git"
+  },
+  "keywords": [
+    "extract",
+    "json",
+    "object",
+    "array",
+    "from",
+    "string"
+  ],
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "bob build",
+    "lint": "bob lint",
+    "postversion": "git push",
+    "prepublishOnly": "yarn run build && yarn test",
+    "test": "jest"
+  },
+  "dependencies": {
+    "parse-json-object": "^2.0.0",
+    "reduce-first": "^1.0.1"
+  },
+  "devDependencies": {
+    "@bconnorwhite/bob": "^2.3.0",
+    "jest": "^26.4.2"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-bob"
+  },
+  "npmpackagejsonlint": {
+    "extends": "npm-package-json-lint-config-bob"
+  }
+}

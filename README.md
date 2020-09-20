@@ -30,6 +30,18 @@ npm install extract-first-json
 
 <br />
 
+## API
+
+```ts
+import { extractJSON, extractJSONObject, extractJSONArray } from "extract-first-json";
+
+const string = `Results: { "ok": true }`;
+
+extractJSON(string); // { ok: true }
+```
+
+<br />
+
 <h2>Dependencies<img align="right" alt="dependencies" src="https://img.shields.io/david/bconnorwhite/extract-first-json.svg"></h2>
 
 - [parse-json-object](https://www.npmjs.com/package/parse-json-object): Parse a typed JSON object.

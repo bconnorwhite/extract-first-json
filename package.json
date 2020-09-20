@@ -28,7 +28,7 @@
   "scripts": {
     "build": "bob build",
     "lint": "bob lint",
-    "postversion": "git push",
+    "postversion": "git push --tags",
     "prepublishOnly": "yarn run build && yarn test",
     "test": "jest"
   },

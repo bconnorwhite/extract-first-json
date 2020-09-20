@@ -33,3 +33,8 @@ export function extractJSONArray(text: string): JSONArray | undefined {
 export function extractJSON(text: string): JSONObject | JSONArray | undefined {
   return extractJSONObject(text) ?? extractJSONArray(text);
 }
+
+export {
+  JSONArray,
+  JSONObject
+}

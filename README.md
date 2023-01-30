@@ -49,9 +49,15 @@ pnpm add extract-first-json
 ```ts
 import { extractJSON, extractJSONObject, extractJSONArray } from "extract-first-json";
 
-const string = `Results: { "ok": true }`;
+const string = `Example: { "ok": true }`;
+
+const arrayString = `Example: [{ "ok": true }]`;
 
 extractJSON(string); // { ok: true }
+
+extractJSONObject(string); // { ok: true }
+
+extractJSONArray(arrayString); // [{ "ok": true }]
 ```
 
 <!--BEGIN FOOTER-->

@@ -60,16 +60,14 @@ extractJSON(string); // { ok: true }
 
 <h2 id="dependencies">Dependencies<a href="https://www.npmjs.com/package/extract-first-json?activeTab=dependencies"><img align="right" alt="dependencies" src="https://img.shields.io/librariesio/release/npm/extract-first-json.svg"></a></h2>
 
+- [parse-json-object](https://www.npmjs.com/package/parse-json-object): Parse a typed JSON object from a string
 - [reduce-first](https://www.npmjs.com/package/reduce-first): Return early from reduce
-- [types-json](https://www.npmjs.com/package/types-json): Type checking for JSON values
-
 
 <br />
 
 <h3>Dev Dependencies</h3>
 
 - [autorepo](https://www.npmjs.com/package/autorepo): Autorepo abstracts away your dev dependencies, providing a single command to run all of your scripts.
-
 
 <br />
 

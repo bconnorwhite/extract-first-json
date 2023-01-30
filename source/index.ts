@@ -40,7 +40,7 @@ export function extractJSON(text: string): JSONObject | JSONArray | undefined {
   }
 }
 
-export {
+export type {
   JSONArray,
   JSONObject
-}
+};

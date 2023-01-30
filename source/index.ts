@@ -31,7 +31,13 @@ export function extractJSONArray(text: string): JSONArray | undefined {
 }
 
 export function extractJSON(text: string): JSONObject | JSONArray | undefined {
-  return extractJSONObject(text) ?? extractJSONArray(text);
+  const object = extractJSONObject(text);
+  const array = extractJSONArray(text);
+  if(object !== undefined && array !== undefined) {
+    return JSON.stringify(object).length > JSON.stringify(array).length ? object : array;
+  } else {
+    return object ?? array;
+  }
 }
 
 export {

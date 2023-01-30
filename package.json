@@ -43,8 +43,7 @@
   },
   "dependencies": {
     "parse-json-object": "^3.0.1",
-    "reduce-first": "^2.0.0",
-    "types-json": "^4.0.0"
+    "reduce-first": "^2.0.0"
   },
   "devDependencies": {
     "autorepo": "^0.1.9"

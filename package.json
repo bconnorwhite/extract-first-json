@@ -1,6 +1,6 @@
 {
   "name": "extract-first-json",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Extract the first JSON object or array from a string",
   "license": "MIT",
   "private": false,

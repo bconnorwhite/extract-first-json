@@ -1,36 +1,50 @@
-<div align="center">
+<!--BEGIN HEADER-->
+<div id="top" align="center">
   <h1>extract-first-json</h1>
   <a href="https://npmjs.com/package/extract-first-json">
-    <img alt="npm" src="https://img.shields.io/npm/v/extract-first-json.svg">
+    <img alt="NPM" src="https://img.shields.io/npm/v/extract-first-json.svg">
   </a>
   <a href="https://github.com/bconnorwhite/extract-first-json">
-    <img alt="typescript" src="https://img.shields.io/badge/TypeScript-%F0%9F%91%8D-blue.svg">
-  </a>
-  <a href="https://github.com/bconnorwhite/extract-first-json">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/extract-first-json?label=Stars%20Appreciated%21&style=social">
-  </a>
-  <a href="https://twitter.com/bconnorwhite">
-    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/bconnorwhite.svg?label=%40bconnorwhite&style=social">
+    <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/extract-first-json.svg">
   </a>
 </div>
 
 <br />
 
-> Extract the first JSON object or array from a string.
+<blockquote align="center">Extract the first JSON object or array from a string.</blockquote>
+
+<br />
+
+_If I should maintain this repo, please ⭐️_
+<a href="https://github.com/bconnorwhite/extract-first-json">
+  <img align="right" alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/extract-first-json?label=%E2%AD%90%EF%B8%8F&style=social">
+</a>
+
+_DM me on [Twitter](https://twitter.com/bconnorwhite) if you have questions or suggestions._
+<a href="https://twitter.com/bconnorwhite">
+  <img align="right" alt="Twitter" src="https://img.shields.io/twitter/url?label=%40bconnorwhite&style=social&url=https%3A%2F%2Ftwitter.com%2Fbconnorwhite">
+</a>
+
+---
+<!--END HEADER-->
 
 ## Installation
 
-```bash
+```sh
 yarn add extract-first-json
 ```
 
-```bash
+```sh
 npm install extract-first-json
+```
+
+```sh
+pnpm add extract-first-json
 ```
 
 <br />
 
-## API
+## Usage
 
 ```ts
 import { extractJSON, extractJSONObject, extractJSONArray } from "extract-first-json";
@@ -40,21 +54,26 @@ const string = `Results: { "ok": true }`;
 extractJSON(string); // { ok: true }
 ```
 
+<!--BEGIN FOOTER-->
+
 <br />
 
-<h2>Dependencies<img align="right" alt="dependencies" src="https://img.shields.io/david/bconnorwhite/extract-first-json.svg"></h2>
+<h2 id="dependencies">Dependencies<a href="https://www.npmjs.com/package/extract-first-json?activeTab=dependencies"><img align="right" alt="dependencies" src="https://img.shields.io/librariesio/release/npm/extract-first-json.svg"></a></h2>
 
-- [parse-json-object](https://www.npmjs.com/package/parse-json-object): Parse a typed JSON object.
 - [reduce-first](https://www.npmjs.com/package/reduce-first): Return early from reduce
+- [types-json](https://www.npmjs.com/package/types-json): Type checking for JSON values
+
 
 <br />
 
-<h2>Dev Dependencies<img align="right" alt="David" src="https://img.shields.io/david/dev/bconnorwhite/extract-first-json.svg"></h2>
+<h3>Dev Dependencies</h3>
 
-- [@bconnorwhite/bob](https://www.npmjs.com/package/@bconnorwhite/bob): Bob is a toolkit for TypeScript projects
+- [autorepo](https://www.npmjs.com/package/autorepo): Autorepo abstracts away your dev dependencies, providing a single command to run all of your scripts.
+
 
 <br />
 
-<h2>License <img align="right" alt="license" src="https://img.shields.io/npm/l/extract-first-json.svg"></h2>
+<h2 id="license">License <a href="https://opensource.org/licenses/MIT"><img align="right" alt="license" src="https://img.shields.io/npm/l/extract-first-json.svg"></a></h2>
 
 [MIT](https://opensource.org/licenses/MIT)
+<!--END FOOTER-->

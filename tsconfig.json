@@ -1,26 +1,13 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@autosoft/tsconfig",
   "compilerOptions": {
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "preserve",
-    "lib": [
-      "dom",
-      "esnext"
-    ],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "outDir": "build",
-    "removeComments": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "esnext"
+    "outDir": ".auto/build",
+    "rootDirs": [
+      "source"
+    ]
   },
-  "include": [
-    "source"
+  "files": [
+    "source/index.ts"
   ]
 }

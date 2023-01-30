@@ -1,3 +1,12 @@
+## [2.0.2](https://github.com/bconnorwhite/extract-first-json/compare/v2.0.1...v2.0.2) (2023-01-30)
+
+
+### Bug Fixes
+
+* remove unused dependency ([e37aac3](https://github.com/bconnorwhite/extract-first-json/commit/e37aac325b142ab06e4c2f07453583e070e5503f))
+
+
+
 ## [2.0.1](https://github.com/bconnorwhite/extract-first-json/compare/v2.0.0...v2.0.1) (2023-01-30)
 
 

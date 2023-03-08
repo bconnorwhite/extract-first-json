@@ -1,3 +1,12 @@
+## [2.0.3](https://github.com/bconnorwhite/extract-first-json/compare/v2.0.2...v2.0.3) (2023-03-08)
+
+
+### Bug Fixes
+
+* multiple json in string will infinite loop ([8f24ce9](https://github.com/bconnorwhite/extract-first-json/commit/8f24ce96491405bef5b5bf4569a1e21ab51b57e2))
+
+
+
 ## [2.0.2](https://github.com/bconnorwhite/extract-first-json/compare/v2.0.1...v2.0.2) (2023-01-30)
 
 

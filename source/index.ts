@@ -11,7 +11,7 @@ function extract<T extends JSONValue>(
     if(char === startBracket) {
       let section = text.slice(startIndex);
       while(section.lastIndexOf(endBracket) > 0) {
-        section = section.slice(0, section.lastIndexOf(endBracket)+1);
+        section = section.slice(0, section.substring(0, section.length - 1).lastIndexOf(endBracket) + 1);
         const result = parser(section);
         if(result !== undefined) {
           return result;

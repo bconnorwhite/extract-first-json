@@ -8,6 +8,8 @@ $ /path/to/node_modules/.bin/cloc source --json
 ✨  Done in 0.23s.
 `;
 
+const objectRandomString = "{\"a\":1}{\"b\":2}";
+
 const objectWithArrayString = "Some text: { \"test\": [1, 2, 3] } Done";
 
 const arrayString = "Some text: [1, 2, 3] Done";
@@ -37,6 +39,11 @@ test("extractJSON array with object", () => {
 test("extractJSONObject", () => {
   const json = extractJSONObject(objectString);
   expect(json).toEqual({ test: { a: 1 } });
+});
+
+test("extractJSONObject", () => {
+  const json = extractJSONObject(objectRandomString);
+  expect(json).toEqual({ a: 1 });
 });
 
 test("extractJSONArray", () => {
